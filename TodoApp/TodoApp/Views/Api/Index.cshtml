@@ -1,0 +1,10 @@
+﻿@model List<TodoApp.Models.TodoItem>
+
+<h1>Task</h1>
+
+@foreach (var item in Model)
+{
+    <h2>@item.Name</h2>
+    <p>Completed: @item.IsComplete</p>
+    <p>From list @item.ListID</p>
+}
